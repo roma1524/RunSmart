@@ -1,0 +1,47 @@
+.preference {
+  min-height: 473px;
+  padding: 65px 0 60px 0;
+  text-align: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #0D0D0D;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+
+  &__item {
+    width: 277px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+
+    span {
+      font-weight: 700;
+      font-size: 18px;
+      color: #0D0D0D;
+      margin-top: 35px;
+    }
+
+    &__descr {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      color: #0D0D0D;
+      margin-top: 20px;
+    }
+  }
+
+}
