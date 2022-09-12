@@ -1,19 +1,14 @@
 .preference {
   min-height: 473px;
   padding: 65px 0 60px 0;
-  text-align: center;
-
-  &__title {
-    font-weight: 700;
-    font-size: 30px;
-    color: #0D0D0D;
-  }
+  background-color: #F6F6F6;
 
   &__items {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 60px;
+    text-align: center;
   }
 
   &__item {
@@ -21,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 15px;
 
     img {
       width: 70px;

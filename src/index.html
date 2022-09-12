@@ -8,11 +8,13 @@
     <title>Pulse</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" href="css/styles.min.css">
+
 </head>
 <body>
 
-<div class="promo">
+<section class="promo">
     <div class="container">
         <header class="header">
             <a href="#" class="header__logo">
@@ -58,13 +60,13 @@
         </div>
 
     </div>
-</div>
+</section>
 
 <section class="preference">
     <div class="container">
-        <h2 class="preference__title">
+        <div class="title">
             НАШИ ПРЕИМУЩЕСТВА
-        </h2>
+        </div>
         <div class="preference__items">
             <div class="preference__item">
                 <img src="icons/advantages/cup.png" alt="cup">
@@ -78,15 +80,18 @@
                 <img src="icons/advantages/heart.png" alt="heart">
                 <span>Заботимся о здоровье</span>
                 <div class="preference__item__descr">
-                    Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам
-                    и Вашим близким!
+                    Мы работаем для того,<br>
+                    чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в<br>
+                    радость Вам и Вашим близким!
                 </div>
             </div>
             <div class="preference__item">
                 <img src="icons/advantages/shoe.png" alt="shoe">
                 <span>Учим бегать</span>
                 <div class="preference__item__descr">
-                    Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России -
+                    Помогаем с обучением<br>
+                    правильной технике бега!<br>
+                    Дружим с крупнейшей школой бега в России -
                     <a href="#">I LOVE RUNNING</a>.
                 </div>
             </div>
@@ -94,5 +99,77 @@
     </div>
 </section>
 
+<section class="consultation">
+    <div class="container">
+        <h2 class="title title_left">
+            Получите бесплатную консультацию<br>
+            по подбору пульсометра
+        </h2>
+        <div class="consultation__descr">
+            Просто заполните форму заявки <br>
+            и мы перезвоним вам в течении 10 минут
+        </div>
+        <form class="feed-form" action="#">
+            <input name="name" required type="text" placeholder="Ваше имя">
+            <input name="phone" required type="number" placeholder="Ваш телефон">
+            <input name="email" required type="email" placeholder="Ваш E-mail">
+            <button class="button button_submit">Заказать консультацию</button>
+        </form>
+    </div>
+</section>
+
+<section class="carousel">
+    <div class="container">
+        <div class="carousel__inner">
+            <div>
+                <img src="img/slide1.jpg" alt="slide 1">
+            </div>
+            <div>
+                <img src="img/slide2.jpg" alt="slide 2">
+            </div>
+            <div>
+                <img src="img/slide3.jpg" alt="slide 3">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="catalog">
+    <div class="container">
+        <h2 class="title">Каталог пульсометров</h2>
+        <ul class="catalog__tabs">
+            <li class="catalog__tab catalog__tab_active"><div>Для фитнеса</div></li>
+            <li class="catalog__tab"><div>для бега</div></li>
+            <li class="catalog__tab"><div>для триатлона</div></li>
+        </ul>
+
+        <div class="catalog__content">
+            <div class="catalog-item">
+                <img src="img/polar.jpg" alt="пульсометр" class="catalog-item__img">
+                <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                <hr>
+
+                <div class="catalog-item__footer">
+                    <div class="catalog-item__prices">
+                        <div class="catalog-item__old_price">4 750 руб.</div>
+                        <div class="catalog-item__current_price">4 500 руб.</div>
+                    </div>
+                    <button class="button button_mini">КУПИТЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog__content"></div>
+
+        <div class="catalog__content"></div>
+    </div>
+</section>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
