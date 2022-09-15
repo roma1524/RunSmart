@@ -39,4 +39,15 @@
     }
   }
 
+  .heart__beat {
+    //animation-name: heartbeat;
+    //animation-direction: ;
+    //animation-timing-function: ease;
+    animation: heartbeat .7s ease infinite;
+    //animation-iteration-count: infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
 }

@@ -126,7 +126,7 @@ $(document).ready(function () {
 
   // Smooth scroll and pageup
 
-  $(window).scroll(function() {
+  $(window).scroll(() => {
     if ($(this).scrollTop() > 1600) {
       $('.pageup').fadeIn();
     } else {
@@ -134,8 +134,8 @@ $(document).ready(function () {
     }
   });
 
-  $("a[href=#up]").click(function(){
-    const _href = $(this).attr("href");
+  $("a[href=#up]").click(function () {
+    const _href = $(this).attr('href');
     $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
     return false;
   });

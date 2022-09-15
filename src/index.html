@@ -2,13 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pulse</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
@@ -64,9 +61,9 @@
 
 <section class="preference">
     <div class="container">
-        <div class="title">
+        <h2 class="title">
             НАШИ ПРЕИМУЩЕСТВА
-        </div>
+        </h2>
         <div class="preference__items">
             <div class="preference__item">
                 <img src="icons/advantages/cup.png" alt="cup">
@@ -77,7 +74,7 @@
                 </div>
             </div>
             <div class="preference__item">
-                <img src="icons/advantages/heart.png" alt="heart">
+                <img src="icons/advantages/heart.png" alt="heart" class="heart__beat">
                 <span>Заботимся о здоровье</span>
                 <div class="preference__item__descr">
                     Мы работаем для того,<br>
@@ -118,7 +115,7 @@
     </div>
 </section>
 
-<section class="carousel">
+<div class="carousel">
     <div class="container">
         <div class="carousel__inner">
             <div>
@@ -132,7 +129,7 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <section class="catalog">
     <div class="container">
@@ -512,7 +509,8 @@
 
         <div class="comments__items">
 
-            <div class="comments__item">
+            <div class="comments__item wow animate__animated animate__fadeInUp" data-wow-duration=".5s"
+                 data-wow-delay=".5s">
 
                 <img class="comments__item__img" src="img/photo_1.jpg" alt="photo">
 
@@ -530,7 +528,8 @@
 
             </div>
 
-            <div class="comments__item">
+            <div class="comments__item wow animate__animated animate__fadeInUp" data-wow-duration=".5s"
+                 data-wow-delay=".5s">
 
                 <img class="comments__item__img" src="img/photo_2.jpg" alt="photo">
 
@@ -547,7 +546,8 @@
 
             </div>
 
-            <div class="comments__item">
+            <div class="comments__item wow animate__animated animate__fadeInUp" data-wow-duration=".5s"
+                 data-wow-delay=".5s">
 
                 <img class="comments__item__img" src="img/photo_3.jpg" alt="photo">
 
@@ -624,11 +624,12 @@
     <img src="icons/up.svg" alt="up">
 </a>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
