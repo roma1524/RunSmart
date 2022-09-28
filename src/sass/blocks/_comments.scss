@@ -1,11 +1,12 @@
 .comments {
-  padding: 0 53px 48px 0;
+  padding-bottom: 48px;
 
   &__items {
     display: flex;
     flex-direction: column;
     gap: 60px;
     margin-top: 60px;
+    margin-left: 15px;
   }
 
   &__item {
