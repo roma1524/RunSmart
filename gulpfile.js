@@ -9,22 +9,22 @@ const htmlmin = require('gulp-htmlmin');
 
 
 // Static server
-// gulp.task('server', function () {   // Запускаем локальный сервер
-//   browserSync.init({
-//     server: {
-//       baseDir: "src"  // Папка, которую будет подхватывать gulp
-//     }
-//   });
-// });
-
 gulp.task('server', function () {   // Запускаем локальный сервер
-  browserSync({
+  browserSync.init({
     server: {
-      baseDir: "dist"  // Папка, которую будет подхватывать gulp
+      baseDir: "src"  // Папка, которую будет подхватывать gulp
     }
   });
-  gulp.watch("src/*+.html").on('change', browserSync.reload);
 });
+
+// gulp.task('server', function () {   // Запускаем локальный сервер
+//   browserSync({
+//     server: {
+//       baseDir: "dist"  // Папка, которую будет подхватывать gulp
+//     }
+//   });
+//   gulp.watch("src/*+.html").on('change', browserSync.reload);
+// });
 
 gulp.task('styles', function () {
   return gulp.src("src/sass/**/*.+(scss|sass)")  // берём любой файл с расширением cscc или sasss
@@ -35,8 +35,8 @@ gulp.task('styles', function () {
     }))
     .pipe(autoprefixer())  // Используем плагин autoprefixer
     .pipe(cleanCSS({compatibility: 'ie8'}))   // Используем плагин cleanCSS
-    // .pipe(gulp.dest('src/css'))  // После этого мы кладём файл по пути src/css
-    .pipe(gulp.dest('dist/css'))  // После этого мы кладём файл по пути src/css
+    .pipe(gulp.dest('src/css'))  // После этого мы кладём файл по пути src/css
+    // .pipe(gulp.dest('dist/css'))  // После этого мы кладём файл по пути src/css
     .pipe(browserSync.stream());  // После изменений, обновляем страницу командой
 });
 
